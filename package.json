@@ -1,0 +1,23 @@
+{
+  "name": "north-west-sterling-homes",
+  "version": "0.0.1",
+  "description": "North West Sterling Homes web site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vvitali/North-West-Sterling-Homes.git"
+  },
+  "author": "Vvitali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vvitali/North-West-Sterling-Homes/issues"
+  },
+  "homepage": "https://github.com/Vvitali/North-West-Sterling-Homes#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11"
+  }
+}
