@@ -8,7 +8,7 @@
 }
 
 body{
-	background-color: #000;
+	background-color: #2C3237;
 }
 
 .menu h1{
@@ -16,6 +16,9 @@ body{
 	margin: 25px;
 }
 
+h1{
+	font-size: 32px; 
+}
 
 /*mobile view*/
 @media(max-width: 800px) {
