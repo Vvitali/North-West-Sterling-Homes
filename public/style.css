@@ -1,0 +1,13 @@
+body{
+	background-color: #2C3237;
+	color: white;
+}
+
+#inDevelopment { 
+	top: 40%;
+	text-align: center;
+	margin: auto;
+}
+a{
+	color: gray;
+}
