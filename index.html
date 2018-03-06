@@ -38,10 +38,10 @@
 
 	</div>
 	<script type="text/javascript">
-		var metaTag=window.frames[0].parent.document.createElement('meta');
+		var metaTag= parent.document.createElement('meta');
 		metaTag.name = "viewport"
 		metaTag.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-		window.frames[0].parent.document.getElementsByTagName('head')[0].appendChild(metaTag);
+		parent.document.getElementsByTagName('head')[0].appendChild(metaTag);
 	</script>
 </body>
 </html>
