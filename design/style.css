@@ -12,6 +12,7 @@ body{
 
 .img1, .img2, .img3, .img4{
 	height: 700px;
+	
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
