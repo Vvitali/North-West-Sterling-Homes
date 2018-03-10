@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Vvitali/North-West-Sterling-Homes#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1"
   }
 }
