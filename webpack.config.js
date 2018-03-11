@@ -1,10 +1,11 @@
 var webpack = require("webpack");
 const path = require('path');
-const os = require('os');
-const UglifyJsParallelPlugin = require('webpack-uglify-parallel');
+const os = require('os'); 
+const env = process.env.NODE_ENV;
 
 
 module.exports = {
+	mode: "production",
 	entry: './src/main.js',
 	output: {
 		filename: 'bundle.js',
@@ -15,8 +16,7 @@ module.exports = {
 		{
 			test:/\.css$/,
 			use:['style-loader','css-loader']
-		},	
-		{
+		}, {
 			test: /\.js?/,
 			loader: "babel-loader",
 			exclude: [
@@ -25,13 +25,8 @@ module.exports = {
 			query:{
 				cacheDirectory: true,
 				presets: ['react']
-			}
+			}	
 		}
 		]
-	},
-	plugins: [
-	new UglifyJsParallelPlugin({
-            workers: os.cpus().length, // usually having as many workers as cpu cores gives good results
-        })
-	]
+	}
 };
