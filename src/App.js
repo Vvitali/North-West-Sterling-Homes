@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import "./effects.css";
+import './reset.css';
 import './App.css';
 import Header from "./Components/Header"
 class App extends Component{

@@ -5,32 +5,39 @@ const env = process.env.NODE_ENV;
 
 
 module.exports = {
-	mode: "production",
+	devtool: "source-map",
 	entry: './src/main.js',
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist/js/')
+		path: path.resolve(__dirname, 'dist/js/'),
+		publicPath: "/public"
 	},
 	module: {
 		rules: [
 		{
 			test:/\.css$/,
 			use:['style-loader','css-loader']
-		}, {
+		}, 
+		{
 			test: /\.js?/,
-			loader: ["react-hot","babel-loader"],
+			loader: "babel-loader",
 			exclude: [
 			path.resolve(__dirname, "node_modules")
 			],
-			query:{
+			options:{
 				cacheDirectory: true,
-				presets: ['react']
+				presets: ["env", "react"]
 			}	
+		},
+		{
+			test: /\.(png|jpg)$/,
+			loader: 'url-loader'
 		}
 		]
 	},
-	devServer: {
-		contentBase: path.join(__dirname, "dist"),
-		compress: true
+	watch: true,
+	watchOptions: {
+		aggregateTimeout: 300,
+		poll: 1000
 	}
 };
