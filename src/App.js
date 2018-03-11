@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import "./Components/Header"
+import Header from "./Components/Header"
 class App extends Component{
 	render(){
 		return(<div>
+			<Header/>
 			<h1>
-			App!
+			Test!
 			</h1>
 			</div>);
 	}

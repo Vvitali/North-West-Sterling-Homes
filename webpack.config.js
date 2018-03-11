@@ -18,7 +18,7 @@ module.exports = {
 			use:['style-loader','css-loader']
 		}, {
 			test: /\.js?/,
-			loader: "babel-loader",
+			loader: ["react-hot","babel-loader"],
 			exclude: [
 			path.resolve(__dirname, "node_modules")
 			],
@@ -28,5 +28,9 @@ module.exports = {
 			}	
 		}
 		]
+	},
+	devServer: {
+		contentBase: path.join(__dirname, "dist"),
+		compress: true
 	}
 };
