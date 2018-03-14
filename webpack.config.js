@@ -3,7 +3,6 @@ const path = require('path');
 const os = require('os'); 
 const env = process.env.NODE_ENV;
 
-
 module.exports = {
 	devtool: "source-map",
 	entry: './src/main.js',
@@ -24,10 +23,10 @@ module.exports = {
 			exclude: [
 			path.resolve(__dirname, "node_modules")
 			],
-			options:{
-				cacheDirectory: true,
-				presets: ["env", "react"]
-			}	
+			query:
+			{
+				presets:['react']
+			}
 		},
 		{
 			test: /\.(png|jpg)$/,
