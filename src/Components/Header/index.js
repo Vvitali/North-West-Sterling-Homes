@@ -5,11 +5,10 @@ const Header = ()=>{
 	console.log("Tteasdast!")
 	return(<div>
 		<a name="anchor"></a>
-		<div class="flex-grid menu">
-		<div class="logo col"><h1>NV Sterling Homes</h1></div>
-		<h1>History</h1>
-		<h1>Homes</h1>
-		<h1>Contacts</h1>
+		<div className="flex-grid menu">
+		<div className="logo col"><a href="/"><h1>NV Sterling Homes</h1></a></div>
+		<a href="/portfolio"><h1>Homes</h1></a>
+		<a href="/contact"><h1>Contacts</h1></a>
 		</div>
 		</div>);
 }

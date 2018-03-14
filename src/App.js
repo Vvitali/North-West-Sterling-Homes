@@ -7,19 +7,31 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 const Loading = () => <div>Loading!</div>;
+
 const Home = Loadable({
 	loader: () => import('./routes/Home'),
 	loading: Loading
 });
+
+const Contact = Loadable({
+  loader: ()=>import('./routes/Contact'),
+  loading: Loading
+});
+
+const Projects = Loadable({
+  loader: () => import('./routes/Projects'),
+  loading: Loading
+});
+
 class App extends Component{
 	render(){
 		return(<div>
 			<Header/>
-			<Router basename="/Personal-web-site">
+			<Router>
 			<Switch>
-			<Route exact path="/" component={this.Home}/>
-			<Route path="/contact" component={this.Contact}/>
-			<Route path="/portfolio" component={this.Portfolio}/>
+			<Route exact path="/" component={ Home}/>
+			<Route path="/contact" component={ Contact}/>
+			<Route path="/portfolio" component={ Projects}/>
 			</Switch>
 			</Router>
 			</div>);
