@@ -3,10 +3,10 @@ import Parallax from "../../Components/Parallax";
 class Home extends Component{
 	render(){  
 		return(
-			<div className="BioStyle row text-left">
 
-			<h1></h1>
-			<Parallax linkTo="./test/1.jpg"></Parallax>
+			<div className="BioStyle ">
+			<Parallax linkTo="./test/1.jpg">
+			<h1>Main screen</h1></Parallax>
 			<div className="info"></div>
 			<Parallax linkTo="./test/2.jpg"></Parallax>
 			<div className="info"></div>
