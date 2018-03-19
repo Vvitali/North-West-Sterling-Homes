@@ -19,6 +19,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "google-map-react": "^0.34.0",
     "less": "^3.0.1"
   }
 }
