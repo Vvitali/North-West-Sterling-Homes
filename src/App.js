@@ -8,30 +8,27 @@ import Loadable from 'react-loadable';
 
 const Loading = () => <div>Loading!</div>;
 
-const Home = Loadable({
-	loader: () => import('./routes/Home'),
-	loading: Loading
-});
-
-const Contact = Loadable({
-	loader: ()=>import('./routes/Contact'),
-	loading: Loading
-});
-
-const Projects = Loadable({
-	loader: () => import('./routes/Projects'),
-	loading: Loading
-});
-
 class App extends Component{
+	Home = Loadable({
+		loader: () => import('./routes/Home'),
+		loading: Loading
+	});
+	Contact = Loadable({
+		loader: ()=>import('./routes/Contact'),
+		loading: Loading
+	});
+	Projects = Loadable({
+		loader: () => import('./routes/Projects'),
+		loading: Loading
+	});
 	render(){
 		return(<div>
 			<Header/>
 			<Router basename="/North-West-Sterling-Homes">
 			<Switch>
-			<Route exact path="/" component={ Home}/>
-			<Route path="/contact" component={ Contact}/>
-			<Route path="/portfolio" component={ Projects}/>
+			<Route exact path="/" component={ this.Home}/>
+			<Route path="/contact" component={  this.Contact}/>
+			<Route path="/portfolio" component={  this.Projects}/>
 			</Switch>
 			</Router>
 			</div>);

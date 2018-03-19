@@ -2,7 +2,7 @@
   "name": "north-west-sterling-homes",
   "version": "0.1.0",
   "description": "North West Sterling Homes web site",
-  "homepage" : "https://vvitali.github.io/North-West-Sterling-Homes",
+  "homepage" : "https://vvitali.github.io/North-West-Sterling-Homes/",
   "private": true,
   "author": "Vvitali",
   "dependencies": {
