@@ -14,24 +14,24 @@ const Home = Loadable({
 });
 
 const Contact = Loadable({
-  loader: ()=>import('./routes/Contact'),
-  loading: Loading
+	loader: ()=>import('./routes/Contact'),
+	loading: Loading
 });
 
 const Projects = Loadable({
-  loader: () => import('./routes/Projects'),
-  loading: Loading
+	loader: () => import('./routes/Projects'),
+	loading: Loading
 });
 
 class App extends Component{
 	render(){
 		return(<div>
 			<Header/>
-			<Router>
+			<Router basename="/North-West-Sterling-Homes">
 			<Switch>
 			<Route exact path="/" component={ Home}/>
-			<Route path="/contact" component={ Contact}/>
-			<Route path="/portfolio" component={ Projects}/>
+			<Route path="./contact" component={ Contact}/>
+			<Route path="./portfolio" component={ Projects}/>
 			</Switch>
 			</Router>
 			</div>);
