@@ -30,8 +30,8 @@ class App extends Component{
 			<Router basename="/North-West-Sterling-Homes">
 			<Switch>
 			<Route exact path="/" component={ Home}/>
-			<Route path="./contact" component={ Contact}/>
-			<Route path="./portfolio" component={ Projects}/>
+			<Route path="/contact" component={ Contact}/>
+			<Route path="/portfolio" component={ Projects}/>
 			</Switch>
 			</Router>
 			</div>);

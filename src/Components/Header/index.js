@@ -22,7 +22,7 @@ return(<div>
 
 
 				<ul className="nav navbar-nav navbar-right">
-					<li><a href="/portfolio">Projects</a></li>
+					<li><a href="./portfolio">Projects</a></li>
 					<li className="dropdown">
 						<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span className="caret"></span></a>
 						<ul className="dropdown-menu">
@@ -33,7 +33,7 @@ return(<div>
 							<li><a href="#">Separated link</a></li>
 						</ul>
 					</li>
-					<li><a href="/contact">Contacts</a></li>
+					<li><a href="./contact">Contacts</a></li>
 				</ul>
 			</div> 
 		</div> 
