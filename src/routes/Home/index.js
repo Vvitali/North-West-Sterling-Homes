@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Parallax from "../../Components/Parallax";
 
 import MapComponent from "../../Components/Map";
+import "./styles.css"
 class Home extends Component{
 render(){  
 return(
@@ -19,10 +20,10 @@ return(
 					<MapComponent width="70%" height="100%"/>
 					<div className="contacts">
 
-						<h3>Phone-number (clickable):</h3>
+						<h1>Phone-number (clickable):</h1>
 						<p ><a className="btn pulse" href="tel:+15037400866">+1(503)-740-08-66</a></p>
 
-						<h3>Email (clickable):</h3>
+						<h1>Email (clickable):</h1>
 						<a className="btn pulse" href="mailto: nwsterlinghomes@gmail.com">nwsterlinghomes@gmail.com</a>
 					</div>
 				</div>
