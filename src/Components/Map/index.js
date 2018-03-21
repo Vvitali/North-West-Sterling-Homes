@@ -21,8 +21,9 @@ class MapComponent extends React.Component{
 	componentStyle={ 
 		width: this.props.width, 
 		height: this.props.height,
-		marging: "20px",
-		position: "relative"
+		marging: "none",
+		position: "relative",
+		float: "left"
 	};
 
 	render(){
