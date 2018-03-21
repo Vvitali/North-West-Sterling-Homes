@@ -1,27 +1,36 @@
 import React from "react";
-import {Carousel} from 'react-responsive-carousel';
+import Slider from 'react-slick';
 import "./slider.css";
-
-const Slider = (props)=>{
-	return (
-		<Carousel showArrows={true} onChange={props.onChange} onClickItem={props.onClickItem} onClickThumb={props.onClickThumb}>
-		<div>
-		<img src="assets/1.jpeg" />
-		<p className="legend">Legend 1</p>
-		</div>
-		<div>
-		<img src="assets/2.jpeg" />
-		<p className="legend">Legend 2</p>
-		</div>
-		<div>
-		<img src="assets/3.jpeg" />
-		<p className="legend">Legend 3</p>
-		</div>
-		<div>
-		
-		</div>
-		</Carousel>
-
-		)
+import Parallax from "../Parallax"; 
+import {isMobile} from 'react-device-detect';
+const SliderComponent = (props)=>{
+var settings = {
+dots: true,
+infinite: true,
+speed: 500,
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+autoplaySpeed: 2000
+};
+return (
+<Slider {...settings}>
+	<div>
+		<Parallax height={isMobile? "350px": "750px"} linkTo="./test/1.jpg">
+			<h1>Main screen</h1>
+		</Parallax>
+	</div>
+	<div>
+		<Parallax height={isMobile? "350px": "750px"} linkTo="./test/2.jpg">
+			<h1>Main screen</h1>
+		</Parallax>
+	</div>
+	<div>
+		<Parallax height={isMobile? "350px": "750px"} linkTo="./test/3.jpg">
+			<h1>Main screen</h1>
+		</Parallax>
+	</div>
+</Slider>
+)
 }
-export default Slider;
+export default SliderComponent;

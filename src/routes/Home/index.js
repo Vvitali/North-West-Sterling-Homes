@@ -12,9 +12,6 @@ class Home extends Component{
 			<div className="BioStyle ">
 			<div className="row">
 			<Slider></Slider>
-			<Parallax height={isMobile? "350px": "750px"} linkTo="./test/1.jpg">
-			<h1>Main screen</h1>
-			</Parallax>
 			</div>
 			<div className="row info">
 
