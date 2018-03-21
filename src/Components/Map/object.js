@@ -22,7 +22,7 @@ class mObject extends React.Component{
 			<img onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler} src="/images/map.png" alt="arrow" style={{position: 'relative', width: "20px", top: -20, left: -10}}/>
 			<div className={this.state.displayed? "card" : "card hidden"} style={{width: "18rem", backgroundColor: "white", borderRadius: "5px"}}>
 			<div className="card-body">
-			<img style={{ width:"100%" }} src={this.props.pic}/>
+			<img style={{ width:"100%" }} src={this.props.pic} alt="place"/>
 			<h5 className="card-title">{this.props.name}</h5>
 			<p className="card-text" style={{paddingBottom: "15px"}}>{this.props.text}</p>
 			</div>
