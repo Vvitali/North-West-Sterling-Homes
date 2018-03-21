@@ -12,6 +12,6 @@
 h1{
 	font-size: 32px; 
 }
-navbar a{
-	color: white;
+.navbar{
+	margin: 0px;
 }

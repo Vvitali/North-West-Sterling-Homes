@@ -8,14 +8,16 @@ render(){
 return(
 
 <div className="BioStyle ">
-	<Parallax linkTo="./test/1.jpg">
-		<h1>Main screen</h1>
-	</Parallax>
+	<div class="row">
+		<Parallax height="350px" linkTo="./test/1.jpg">
+			<h1>Main screen</h1>
+		</Parallax>
+	</div>
 	<div className="row info">
 
 	</div>
 	<div className="row">
-		<Parallax linkTo="./test/2.jpg">
+		<Parallax height="350px" linkTo="./test/2.jpg">
 			<h1>Second main screen</h1>
 		</Parallax>
 	</div>
@@ -44,7 +46,7 @@ return(
 	</div>
 	<div className="row">
 		<div class="col-xs-12">
-			<Parallax className="row" linkTo="./test/4.jpg">
+			<Parallax height="350px" className="row" linkTo="./test/4.jpg">
 				<h1>Fourth Main screen</h1>
 			</Parallax>
 		</div>
