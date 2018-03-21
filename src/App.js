@@ -24,6 +24,7 @@ class App extends Component{
 	render(){
 		return(<div>
 			<Header/>
+			<div className="container">
 			<Router basename="/North-West-Sterling-Homes">
 			<Switch>
 			<Route exact path="/" component={ this.Home}/>
@@ -31,6 +32,7 @@ class App extends Component{
 			<Route path="/portfolio" component={  this.Projects}/>
 			</Switch>
 			</Router>
+			</div>
 			</div>);
 	}
 }

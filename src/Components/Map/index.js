@@ -32,7 +32,7 @@ class MapComponent extends React.Component{
 			renderedPlaces.push(<MapObject key={place.name} name={place.name} lat={ place.position.lat } lng={place.position.lng } pic={ place.pic} text={ place.title }/>); 
 		};
 		return (
-			<GoogleMapReact style={this.componentStyle} defaultCenter={ this.props.center } defaultZoom={ this.props.zoom } bootstrapURLKeys={{
+			<GoogleMapReact style={this.componentStyle}  defaultCenter={ this.props.center } defaultZoom={ this.props.zoom } bootstrapURLKeys={{
 				key: "AIzaSyDyePBmEMRe0sGjQBRvDq8TYEcXkDfp_0I"
 			}}>
 			{

@@ -1,0 +1,27 @@
+.info, .map{
+	height: 700px;
+	padding: 0px;
+}
+.info{
+	width: 100%;
+	margin: 0px;
+}
+
+/*mobile view*/
+@media(max-width: 800px) {
+	.menu h1{
+		font-size: 20px; 
+		margin: 5px;
+	}
+	.img1, .img2, .img3{
+		height: 350px;
+	}
+	.info{ 
+		height: 350px;
+		width: 100%;
+	}
+	.map{
+		height: 100%;
+		width: 100%;
+	}
+}
