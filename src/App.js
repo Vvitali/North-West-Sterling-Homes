@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
-const Loading = () => <div>Loading!</div>;
+const Loading = () => <div><h2>Loading!</h2></div>;
 
 class App extends Component{
 	Home = Loadable({

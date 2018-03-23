@@ -1,6 +1,5 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
-console.log("Parallax!")
+import { Parallax } from 'react-parallax';
 const MyParallaxComponent = (props) => (
   <div>
   <Parallax
