@@ -32,7 +32,7 @@ class App extends Component{
 			<Route path="/portfolio" component={  this.Projects}/>
 			</Switch>
 			</Router>
-			</div>
+			</div> 
 			</div>);
 	}
 }
