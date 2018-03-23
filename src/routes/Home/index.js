@@ -32,30 +32,15 @@ return(
 	</div>
 	<div className="row info">
 		<div className="col-xs-12 col-sm-12 col-md-4 map" >
-			<MapComponent width="100%" height="100%">
-
-			</MapComponent>
+			<MapComponent width="100%" height="100%"></MapComponent>
 		</div>
-
 		<div className="col-xs-12 col-sm-12 col-md-4 contacts">
-			<h1>Phone-number (clickable):</h1>
-			<p>
-				<a className="btn pulse" href="tel:+15037400866">+1(503)-740-08-66</a>
-			</p>
-			<h1>Email (clickable):</h1>
-			<a className="btn pulse" href="mailto: nwsterlinghomes@gmail.com">nwsterlinghomes@gmail.com</a>
+			<a name="contacts"/>
+			<h2>Phone-number (clickable):<a className="btn pulse" href="tel:+15037400866">+1(503)-740-08-66</a></h2>
+			<h2>Email (clickable):<a className="btn pulse" href="mailto: nwsterlinghomes@gmail.com">nwsterlinghomes@gmail.com</a></h2>
 		</div>
 	</div>
-	<div className="row">
-		<div className="col-xs-12">
-			<Parallax height={isMobile? "350px": "750px"}  linkTo="./test/4.jpg">
-				<h1>Fourth Main screen</h1>
-			</Parallax>
-		</div>
-
-	</div>
-	<div className="row info">Contacts
-	</div>
+	<div className="row">Contacts</div>
 </div> 
 )
 };

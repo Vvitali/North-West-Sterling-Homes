@@ -32,7 +32,7 @@ const Header = ()=>{
 		<li><a href="./portfolio#porches">Screened Porches</a></li>
 		</ul>
 		</li>
-		<li><a href="./contact"><h2>Contacts</h2></a></li>
+		<li><a href="#contacts"><h2>Contacts</h2></a></li>
 		</ul>
 		</div> 
 		</div> 
