@@ -1,8 +1,7 @@
 import React from "react";
 import Slider from 'react-slick';
 import "./slider.css";
-import Parallax from "../Parallax"; 
-import {isMobile} from 'react-device-detect';
+import Parallax from "../Parallax";
 const SliderComponent = (props)=>{
 	var settings = {
 		dots: false,
@@ -17,17 +16,17 @@ const SliderComponent = (props)=>{
 	return (
 		<Slider {...settings}>
 		<div>
-		<Parallax height={isMobile? "350px": "750px"} linkTo="./test/1.jpg">
+		<Parallax height={props.height} linkTo="./assets/images/masonry.jpg">
+		<h1>Masonry</h1>
+		</Parallax>
+		</div>
+		<div>
+		<Parallax height={props.height} linkTo="./test/2.jpg">
 		<h1>Main screen</h1>
 		</Parallax>
 		</div>
 		<div>
-		<Parallax height={isMobile? "350px": "750px"} linkTo="./test/2.jpg">
-		<h1>Main screen</h1>
-		</Parallax>
-		</div>
-		<div>
-		<Parallax height={isMobile? "350px": "750px"} linkTo="./test/3.jpg">
+		<Parallax height={props.height} linkTo="./test/3.jpg">
 		<h1>Main screen</h1>
 		</Parallax>
 		</div>

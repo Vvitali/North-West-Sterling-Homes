@@ -17,12 +17,12 @@ const Header = ()=>{
 
 		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul className="nav navbar-nav navbar-right">
-		<li><a href="./portfolio"><h2>Projects</h2></a></li>
+		<li><a href="./portfolio"><h2>PROJECTS</h2></a></li>
 		<li><a href="./portfolio"><h2>Abouts us</h2></a></li>
 		<li className="dropdown">
 		<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h2>Services</h2></a>
 		<ul className="dropdown-menu">
-		<li><a href="./portfolio#houses">Houses</a></li>
+		<li><a href="./portfolio#houses">HOUSES</a></li>
 		<li role="separator" className="divider"></li>
 		<li><a href="./portfolio#masonry">Masonry</a></li>
 		<li><a href="./portfolio#painting">Painting</a></li>
