@@ -12,15 +12,15 @@ const Header = ()=>{
 		<span className="icon-bar"></span>
 		<span className="icon-bar"></span>
 		</button>
-		<a className="navbar-brand" href="./"><h2>NV Sterling Homes</h2></a>
+		<a className="navbar-brand" href="./"><h2>NV STERLING HOMES</h2></a>
 		</div>
 
 		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul className="nav navbar-nav navbar-right">
 		<li><a href="./portfolio"><h2>PROJECTS</h2></a></li>
-		<li><a href="./portfolio"><h2>Abouts us</h2></a></li>
+		<li><a href="./portfolio"><h2>ABOUT US</h2></a></li>
 		<li className="dropdown">
-		<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h2>Services</h2></a>
+		<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h2>SERVICES</h2></a>
 		<ul className="dropdown-menu">
 		<li><a href="./portfolio#houses">HOUSES</a></li>
 		<li role="separator" className="divider"></li>
@@ -32,7 +32,7 @@ const Header = ()=>{
 		<li><a href="./portfolio#porches">Screened Porches</a></li>
 		</ul>
 		</li>
-		<li><a href="#contacts"><h2>Contacts</h2></a></li>
+		<li><a href="/#contacts"><h2>CONTACTS</h2></a></li>
 		</ul>
 		</div> 
 		</div> 

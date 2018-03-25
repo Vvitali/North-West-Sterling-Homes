@@ -36,9 +36,6 @@ class Home extends Component{
 
 			</div>
 			<div className="row">
-			{
-				console.log(this.state.height)
-			}
 			<Parallax height={isMobile? "350px": this.state.height} linkTo="./test/2.jpg">
 			<h1>Second main screen</h1>
 			</Parallax>
@@ -52,17 +49,18 @@ class Home extends Component{
 			<h1>Third Main screen</h1>
 			</Parallax>
 			</div>
-			<div className="row info">
-			<div className="col-xs-12 col-sm-12 col-md-4 map" >
-			<MapComponent width="100%" height="100%"></MapComponent>
+			<div className="info">
+			<div className="map" > 
+			<MapComponent width={this.state.width/3+"px"} height="100%"></MapComponent>
 			</div>
-			<div className="col-xs-12 col-sm-12 col-md-4 contacts">
+			<div className="info contacts">
 			<a name="contacts"/>
 			<h2>Phone-number (clickable):<a className="btn pulse" href="tel:+15037400866">+1(503)-740-08-66</a></h2>
 			<h2>Email (clickable):<a className="btn pulse" href="mailto: nwsterlinghomes@gmail.com">nwsterlinghomes@gmail.com</a></h2>
 			</div>
 			</div>
-			<div className="row">Contacts</div>
+			<div className="  info">Contacts</div>
+
 			</div> 
 			)
 	};
