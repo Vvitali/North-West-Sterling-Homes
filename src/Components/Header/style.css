@@ -1,5 +1,5 @@
 .menu{
-	background-color: black;
+	background-color: #272727;
 	border: none;
 	text-decoration-color: blue
 }
@@ -9,4 +9,14 @@ h1{
 }
 .navbar{
 	margin: 0px;
+}
+.navbar-brand{
+	position: relative;
+	float: left;
+	left: 25%;
+}
+
+.mobileButtons  { 
+	padding-bottom: 10px;
+	text-align: center;
 }
