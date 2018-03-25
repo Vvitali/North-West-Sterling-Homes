@@ -15,21 +15,16 @@ const SliderComponent = (props)=>{
 	};
 	return (
 		<Slider {...settings}>
-		<div>
-		<Parallax height={props.height} linkTo="./assets/images/masonry.jpg">
-		<h1>Masonry</h1>
-		</Parallax>
-		</div>
-		<div>
-		<Parallax height={props.height} linkTo="./test/2.jpg">
-		<h1>Main screen</h1>
-		</Parallax>
-		</div>
-		<div>
-		<Parallax height={props.height} linkTo="./test/3.jpg">
-		<h1>Main screen</h1>
-		</Parallax>
-		</div>
+		{
+			React.Children.map(props.children, (child, i) => {
+				if(child != null){
+					return child;
+				}else{
+					return 
+				}
+			}) 
+		}
+		
 		</Slider>
 		)
 }

@@ -30,10 +30,29 @@ return(
 
 <div className="BioStyle animated">
 	<div className="row">
-		<Slider height={this.state.height}></Slider>
+		<Slider height={this.state.height}>
+			<div>
+				<Parallax height={this.state.height} linkTo="./assets/images/masonry.jpg">
+					<h1>Masonry</h1>
+				</Parallax>
+			</div>
+			<div>
+				<Parallax height={this.state.height} linkTo="./test/2.jpg">
+					<h1>Main screen</h1>
+				</Parallax>
+			</div>
+			<div>
+				<Parallax height={this.state.height} linkTo="./test/3.jpg">
+					<h1>Main screen</h1>
+				</Parallax>
+			</div>
+
+
+		</Slider>
 	</div>
 	<div className="row info">
-
+		<h2>North West Sterling Homes</h2>
+		<p>More than 20 years of experience, excelent quality, proved specialists, over than 100 residential houses built </p>
 	</div>
 	<div className="row">
 		<Parallax height={isMobile? "350px": this.state.height} linkTo="./test/2.jpg">
@@ -49,16 +68,13 @@ return(
 			<h1>Third Main screen</h1>
 		</Parallax>
 	</div>
-	<div className="info">
+	<div className="info"><a name="contacts"/>
 		<MapComponent className="map" width={isMobile? this.state.width: this.state.width/2.5} height="100%"></MapComponent>
 		<div className="contacts">
-			<a name="contacts"/>
 			<h2>Phone-number (clickable):<a className="btn pulse" href="tel:+15037400866">+1(503)-740-08-66</a></h2>
 			<h2>Email (clickable):<a className="btn pulse" href="mailto: nwsterlinghomes@gmail.com">nwsterlinghomes@gmail.com</a></h2>
 		</div>
 	</div>
-	<div className="info">Contacts</div>
-
 </div> 
 )
 };
