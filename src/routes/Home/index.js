@@ -51,7 +51,7 @@ class Home extends Component{
 			</div>
 			<div className="info">
 			<div className="map" > 
-			<MapComponent width={this.state.width/3+"px"} height="100%"></MapComponent>
+			<MapComponent width={isMobile? this.state.width: this.state.width/2} height="100%"></MapComponent>
 			</div>
 			<div className="info contacts">
 			<a name="contacts"/>
