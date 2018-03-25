@@ -6,63 +6,61 @@ import Slider from "../../Components/Slider";
 import "./styles.css"
 
 class Home extends Component{
-	constructor(props) {
-		super(props);
-		this.state = { width: 0, height: 0 };
-		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-	}
+constructor(props) {
+super(props);
+this.state = { width: 0, height: 0 };
+this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+}
 
-	componentDidMount() {
-		this.updateWindowDimensions();
-		window.addEventListener('resize', this.updateWindowDimensions);
-	}
+componentDidMount() {
+this.updateWindowDimensions();
+window.addEventListener('resize', this.updateWindowDimensions);
+}
 
-	componentWillUnmount() {
-		window.removeEventListener('resize', this.updateWindowDimensions);
-	}
+componentWillUnmount() {
+window.removeEventListener('resize', this.updateWindowDimensions);
+}
 
-	updateWindowDimensions() {
-		this.setState({ width: window.innerWidth, height: window.innerHeight });
-	}
+updateWindowDimensions() {
+this.setState({ width: window.innerWidth, height: window.innerHeight });
+}
 
-	render(){  
-		return(
+render(){  
+return(
 
-			<div className="BioStyle animated">
-			<div className="row">
-			<Slider height={this.state.height}></Slider>
-			</div>
-			<div className="row info">
+<div className="BioStyle animated">
+	<div className="row">
+		<Slider height={this.state.height}></Slider>
+	</div>
+	<div className="row info">
 
-			</div>
-			<div className="row">
-			<Parallax height={isMobile? "350px": this.state.height} linkTo="./test/2.jpg">
+	</div>
+	<div className="row">
+		<Parallax height={isMobile? "350px": this.state.height} linkTo="./test/2.jpg">
 			<h1>Second main screen</h1>
-			</Parallax>
-			</div>
+		</Parallax>
+	</div>
 
-			<div className="row info">
+	<div className="row info">
 
-			</div>
-			<div className="row">
-			<Parallax className="row" height={isMobile? "350px": "750px"} linkTo="./test/3.jpg">
+	</div>
+	<div className="row">
+		<Parallax className="row" height={isMobile? "350px": "750px"} linkTo="./test/3.jpg">
 			<h1>Third Main screen</h1>
-			</Parallax>
-			</div>
-			<div className="info">
-			<div className="map" > 
-			<MapComponent width={isMobile? this.state.width: this.state.width/2} height="100%"></MapComponent>
-			</div>
-			<div className="info contacts">
+		</Parallax>
+	</div>
+	<div className="info">
+		<MapComponent className="map" width={isMobile? this.state.width: this.state.width/2.5} height="100%"></MapComponent>
+		<div className="contacts">
 			<a name="contacts"/>
 			<h2>Phone-number (clickable):<a className="btn pulse" href="tel:+15037400866">+1(503)-740-08-66</a></h2>
 			<h2>Email (clickable):<a className="btn pulse" href="mailto: nwsterlinghomes@gmail.com">nwsterlinghomes@gmail.com</a></h2>
-			</div>
-			</div>
-			<div className="  info">Contacts</div>
+		</div>
+	</div>
+	<div className="info">Contacts</div>
 
-			</div> 
-			)
-	};
+</div> 
+)
+};
 }
 export default Home;

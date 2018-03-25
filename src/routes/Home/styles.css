@@ -6,6 +6,11 @@
 	width: 100%;
 	margin: 0px;
 }
+.contacts{
+	padding: 10px;
+	position: relative;
+	float: left;
+}
 
 /*mobile view*/
 @media(max-width: 800px) {
@@ -21,7 +26,6 @@
 		width: 100%;
 	}
 	.map{
-		height: 100%;
-		width: 100%;
+		height: 100%; 
 	}
 }
