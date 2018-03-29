@@ -6,7 +6,7 @@ const MyParallaxComponent = (props) => (
   blur={0}
   bgImage={  props.linkTo  }
   bgImageAlt="house"
-  strength={400}
+  strength={140} 
   >
   {/*
   Put some text content here
