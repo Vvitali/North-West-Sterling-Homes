@@ -26,10 +26,10 @@ render(){
 return(
 <div className="animated ">
 	<Project img="./projects/1.jpg" height={this.state.height} width={  this.state.width }>
-		<h2>First project!</h2>
+		<h2 style={{display: "inline"}}>First project!</h2>
 	</Project>
 	<Project img="./projects/2.jpg" width={this.state.width}>
-		<div><h2>Second project!</h2></div>
+		<h2>Second project!</h2> 
 		
 	</Project>
 	<Project img="./projects/3.jpg" width={this.state.width}>

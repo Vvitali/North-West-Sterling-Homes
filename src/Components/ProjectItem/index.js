@@ -4,7 +4,11 @@ import {isMobile} from 'react-device-detect';
 const ProjectItem = (props)=>{
 	return (
 		<div style={{ width: "100%"}}>
-		<img src={props.img} style={{width: isMobile? props.width: (props.width/3)}}/>
+		<div className="">
+		<img src={props.img} style={{display: "inline", width: isMobile? props.width: (props.width/3)}}/>
+		</div>
+		
+		<div style={{display: "inline" }}>
 		{
 			React.Children.map(props.children, (child, i) => {
 				if(child != null){
@@ -14,6 +18,7 @@ const ProjectItem = (props)=>{
 				}
 			})
 		}
+		</div>
 		</div>
 		)
 }
