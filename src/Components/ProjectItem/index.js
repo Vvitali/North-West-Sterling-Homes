@@ -6,16 +6,17 @@ const ProjectItem = (props)=>{
 		<div style={{ width: "100%"}}>
 		<img src={props.img} style={
 			isMobile?{
-				width:props.width,
-				float:"none"
+				width:props.width
 			}:{
 				width:(props.width/3),
-				float:"left"
+				display: "inline-block"
 			}
 		}/> 
 		<div className="info" style={
 			{
-				height: isMobile? "250px": (props.width/3)
+				height: isMobile? "250px": "auto",
+				display: "inline-block", 
+				width: "auto"
 			}
 		}>
 		{
