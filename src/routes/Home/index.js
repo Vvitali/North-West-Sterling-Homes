@@ -33,7 +33,7 @@ class Home extends Component{
 			<Slider height={this.state.height} width={this.state.width}>
 			<div>
 			<Parallax height={this.state.height} width={this.state.width} linkTo="./assets/images/masonry.jpg">
-			<h1>Masonry</h1>
+			<h1 className="projectInfo">Masonry</h1>
 			</Parallax>
 			</div>
 			<div>
@@ -52,7 +52,7 @@ class Home extends Component{
 			</div>
 			<div className="row info">
 			<h2>North West Sterling Homes</h2>
-			<p>More than 20 years of experience, excelent quality, proved specialists, over than 100 residential houses built </p>
+			<p className="projectInfo">More than 20 years of experience, excelent quality, proved specialists, over than 100 residential houses built </p>
 			</div>
 			<div className="row">
 			<Parallax height={isMobile? "350px": this.state.height} linkTo="./test/2.jpg">
