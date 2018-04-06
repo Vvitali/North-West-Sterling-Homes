@@ -5,7 +5,7 @@ const ProjectItem = (props)=>{
 return (
 <div style={{ width: "100%"}}>
 	<img src={props.img} style={{ width: isMobile? props.width: (props.width/3)}}/>
-
+	<div></div>
 	<div className="info" style={{height: isMobile? "250px": (props.width/3)}}>
 		{
 			React.Children.map(props.children, (child, i) => {

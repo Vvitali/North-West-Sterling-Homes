@@ -40,6 +40,12 @@ class Projects extends Component{
 			<Project img="./projects/4.jpg" width={this.state.width}>
 			<h2>Fourth project!</h2>
 			</Project>
+			<Project img="./projects/5.jpg" width={this.state.width}>
+			<h2>Fifth project!</h2>
+			</Project>
+			<Project img="./projects/6.jpg" width={this.state.width}>
+			<h2>Sixth project!</h2>
+			</Project>
 			</div>)
 	}
 
