@@ -16,6 +16,7 @@ body{
 .info, .map{
 	height: 700px;
 	padding: 0px;
+	text-align: justify;
 }
 .info{
 	width: 100%;
