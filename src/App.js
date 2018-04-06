@@ -5,6 +5,7 @@ import './App.css';
 import Header from "./Components/Header";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
+import {isMobile} from "react-device-detect";
 
 const Loading = () => <div><h2>Loading!</h2></div>;
 
@@ -20,7 +21,13 @@ class App extends Component{
 	render(){
 		return(<div>
 			<Header/>
-			<div className="container">
+			<div className="container" style={
+				isMobile?{
+					paddingTop: "88px" 
+				}:{
+					paddingTop: "62px"
+				}
+			}>
 			<Router basename="/North-West-Sterling-Homes">
 			<Switch>
 			<Route exact path="/" component={ this.Home}/>

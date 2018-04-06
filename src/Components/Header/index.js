@@ -4,7 +4,7 @@ import {isMobile} from 'react-device-detect';
 const Header = ()=>{
 	return(<div>
 		<a name="anchor"> </a>
-		<nav className="navbar navbar-default menu">
+		<nav className="navbar navbar-default menu navbar-fixed-top">
 		<div className="container-fluid"> 
 		<div className="navbar-header">
 		<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -50,5 +50,5 @@ const Header = ()=>{
 		</nav>
 
 		</div>);
-}
-export default Header;
+	}
+	export default Header;
