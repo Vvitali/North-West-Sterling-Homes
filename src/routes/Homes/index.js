@@ -3,7 +3,7 @@ import Project from "../../Components/ProjectItem";
 import {isMobile} from 'react-device-detect';
 import "./projects.css";
 
-class Projects extends Component{
+class Homes extends Component{
 	constructor(props) {
 		super(props);
 		this.state = { width: 0, height: 0 };
@@ -51,4 +51,4 @@ class Projects extends Component{
 
 }
 
-export default Projects;
+export default Homes;

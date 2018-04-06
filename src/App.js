@@ -13,8 +13,8 @@ class App extends Component{
 		loader: () => import('./routes/Home'),
 		loading: Loading
 	});
-	Projects = Loadable({
-		loader: () => import('./routes/Projects'),
+	Homes = Loadable({
+		loader: () => import('./routes/Homes'),
 		loading: Loading
 	});
 	render(){
@@ -24,7 +24,7 @@ class App extends Component{
 			<Router basename="/North-West-Sterling-Homes">
 			<Switch>
 			<Route exact path="/" component={ this.Home}/>
-			<Route path="/portfolio" component={  this.Projects}/>
+			<Route path="/homes" component={  this.Homes}/>
 			</Switch>
 			</Router>
 			</div> 
