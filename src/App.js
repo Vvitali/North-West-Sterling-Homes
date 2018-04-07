@@ -33,7 +33,7 @@ class App extends Component{
 					paddingTop: "62px"
 				}
 			}>
-			<Router>
+			<Router basename="/North-West-Sterling-Homes/">
 			<Switch>
 
 			<Route exact path="/" component={ this.Home}/>			
