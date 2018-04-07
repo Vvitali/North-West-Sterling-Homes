@@ -25,7 +25,7 @@ class App extends Component{
 	
 	render(){
 		return(<div>
-			<Header/>
+			
 			<div className="container" style={
 				isMobile?{
 					paddingTop: "88px" 
@@ -34,8 +34,9 @@ class App extends Component{
 				}
 			}>
 			<Router basename="/North-West-Sterling-Homes">
+			
 			<Switch>
-
+			<Header/>
 			<Route exact path="/" component={ this.Home}/>			
 			<Route path="/msnry" component={ this.Masonry }/>
 			<Route path="/homes" component={  this.Homes}/>

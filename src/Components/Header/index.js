@@ -1,6 +1,8 @@
 import React from 'react';
 import "./style.css"; 
 import {isMobile} from 'react-device-detect';
+import {Link} from 'react-router-dom';
+
 const Header = ()=>{
 	return(<div>
 		<a name="anchor"> </a>
@@ -31,7 +33,7 @@ const Header = ()=>{
 		<li className="dropdown">
 		<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h2>SERVICES</h2></a>
 		<ul className="dropdown-menu">
-		<li><a href="./Homes">HOUSES</a></li>
+		<li><Link to="/Homes">HOUSES</Link></li>
 		<li role="separator" className="divider"></li>
 		<li><a href="./msnry ">Masonry</a></li>
 		<li><a href="./portfolio#painting">Painting</a></li>
