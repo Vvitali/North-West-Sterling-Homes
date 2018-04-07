@@ -22,7 +22,7 @@ class Home extends Component{
 	}
 
 	updateWindowDimensions() {
-		this.setState({ width: window.innerWidth, height: window.innerHeight });
+		this.setState({ width: window.innerWidth, height: window.innerHeight-60 });
 	}
 
 	render(){  

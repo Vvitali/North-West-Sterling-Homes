@@ -1,9 +1,8 @@
 import React, {Component} from "react";
 import Project from "../../Components/ProjectItem";
-import {isMobile} from 'react-device-detect';
-import "./projects.css";	
+import {isMobile} from 'react-device-detect'; 
 
-class Homes extends Component{
+class Mason extends Component{
 	constructor(props) {
 		super(props);
 		this.state = { width: 0, height: 0 };
@@ -26,29 +25,29 @@ class Homes extends Component{
 	render(){
 		return(
 			<div className="animated ">
-			<Project img="./projects/1.jpg" height={this.state.height} width={  this.state.width }>
+			<Project img="./masonry/1.jpg" height={this.state.height} width={  this.state.width }>
 			<h2>First project!</h2>
 			<p>Full service, based on custom project!</p>
 			</Project>
-			<Project img="./projects/2.jpg" width={this.state.width}>
+			<Project img="./masonry/2.jpg" width={this.state.width}>
 			<h2>Second project!</h2> 
 
 			</Project>
-			<Project img="./projects/3.jpg" width={this.state.width}>
+			<Project img="./masonry/3.jpg" width={this.state.width}>
 			<h2>Third project!</h2>
 			</Project>
-			<Project img="./projects/4.jpg" width={this.state.width}>
+			<Project img="./masonry/4.jpg" width={this.state.width}>
 			<h2>Fourth project!</h2>
 			</Project>
-			<Project img="./projects/5.jpg" width={this.state.width}>
+			<Project img="./masonry/5.jpg" width={this.state.width}>
 			<h2>Fifth project!</h2>
 			</Project>
-			<Project img="./projects/6.jpg" width={this.state.width}>
+			<Project img="./masonry/6.jpg" width={this.state.width}>
 			<h2>Sixth project!</h2>
 			</Project>
 			</div>)
+		}
+
 	}
 
-}
-
-export default Homes;
+	export default Mason;

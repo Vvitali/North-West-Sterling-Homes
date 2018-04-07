@@ -33,7 +33,7 @@ const Header = ()=>{
 		<ul className="dropdown-menu">
 		<li><a href="./Homes">HOUSES</a></li>
 		<li role="separator" className="divider"></li>
-		<li><a href="./portfolio#masonry">Masonry</a></li>
+		<li><a href="./msnry ">Masonry</a></li>
 		<li><a href="./portfolio#painting">Painting</a></li>
 		<li role="separator" className="divider"></li>
 		<li><a href="./portfolio#bnkremodeling">Bathroom & Kitchen Remodeling</a></li>
