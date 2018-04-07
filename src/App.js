@@ -34,14 +34,15 @@ class App extends Component{
 				}
 			}>
 			<Router basename="/North-West-Sterling-Homes">
-			
-			<Switch>
+			<div>
 			<Header/>
+			<Switch>
 			<Route exact path="/" component={ this.Home}/>			
 			<Route path="/msnry" component={ this.Masonry }/>
 			<Route path="/homes" component={  this.Homes}/>
 
 			</Switch>
+			</div>
 			</Router>
 			</div> 
 			</div>);
