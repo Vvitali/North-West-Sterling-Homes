@@ -29,19 +29,9 @@ const Header = ()=>{
 		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 		<ul className="nav navbar-nav navbar-right right">
-		<li><Link to="./Homes"><h2>PROJECTS</h2></Link></li>
+		<li><Link to="./Homes"><h2>SERVICES</h2></Link></li>
 		<li className="dropdown">
-		<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h2>SERVICES</h2></a>
-		<ul className="dropdown-menu">
-		<li><Link to="/Homes">HOUSES</Link></li>
-		<li role="separator" className="divider"></li>
-		<li><Link to="./msnry">Masonry</Link></li>
-		<li><a href="./portfolio#painting">Painting</a></li>
-		<li role="separator" className="divider"></li>
-		<li><a href="./portfolio#bnkremodeling">Bathroom & Kitchen Remodeling</a></li>
-		<li role="separator" className="divider"></li>
-		<li><a href="./portfolio#porches">Screened Porches</a></li>
-		</ul>
+		
 		</li>
 		<li><Link to="./portfolio"><h2>ABOUT US</h2></Link></li>
 
@@ -52,5 +42,5 @@ const Header = ()=>{
 		</nav>
 
 		</div>);
-	}
-	export default Header;
+}
+export default Header;
