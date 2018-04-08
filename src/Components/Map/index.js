@@ -12,20 +12,19 @@ class MapComponent extends React.Component{
 
 	render(){
 		return (
-			<GoogleMapReact 
+			<GoogleMapReact className="col"
 			style={{ 
 				width: this.props.width, 
 				height: this.props.height,
 				marging: "none",
-				position: "relative",
-				float: "left"
+				position: "relative"
 			}}  
 			defaultCenter={ this.props.center } 
 			defaultZoom={ this.props.zoom } 
 			bootstrapURLKeys={{ key: "AIzaSyDyePBmEMRe0sGjQBRvDq8TYEcXkDfp_0I"}}>
 			</GoogleMapReact>
 			);
-	}
+		}
 
-}
-export default MapComponent;
+	}
+	export default MapComponent;

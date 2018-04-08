@@ -6,13 +6,15 @@
 .map{
 	padding: 0;
 	height: 500px;
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .info {
 	height: auto;	
 	text-align: center;	
-}
-.info *{
-	margin: auto; 
 }
 .text{
 	padding: 50px 250px 50px 250px;
