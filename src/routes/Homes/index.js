@@ -77,7 +77,7 @@ class LightboxExample extends Component {
 			<p>Homes</p>
 			</div>
 			<div>
-			<img src="/masonry/1.jpg" key="2" onClick={this.clickHandler}/> 
+			<img src="/masonry/6.jpg" key="2" onClick={this.clickHandler}/> 
 			<p>Masonry</p> 
 			</div>
 			
