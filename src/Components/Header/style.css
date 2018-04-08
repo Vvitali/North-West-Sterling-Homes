@@ -16,21 +16,21 @@ h1{
 	left: 25%;
 }
 
-.mobileButtons  { 
+.mobileButtons{ 
 	padding-bottom: 10px;
 	text-align: center;
 }
+
 .right{
 	text-align: center;
 }
 
-li> a > h2, li{
+.nav h2, li{
 	transition: .5s ease; 
 }
-
-li >a >h2:hover{
+.nav li:hover *{
 	color: black;
 }
-li:hover{
+.nav li:hover{
 	background-color: #D3D3D3;
 }
