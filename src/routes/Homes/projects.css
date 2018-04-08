@@ -10,9 +10,16 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 }
-.gallery-container img{
+.gallery-container div{
 	width: 250px;
+	height: 250px;
 	margin: 5px;
 	padding: 5px;	
+}
+
+.gallery-container img{
+	height: 190px; 
+	width: 100%;
+	border: 1px solid;
 }
 
