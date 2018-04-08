@@ -26,10 +26,6 @@
 	.text{
 		padding: 30px 20px 30px 20px;
 	}
-	.menu h1{
-		font-size: 20px; 
-		margin: 5px;
-	}
 	.img1, .img2, .img3{
 		height: 350px;
 	}
@@ -41,7 +37,7 @@
 		font-size: 20px;
 	}
 	.info h1{
-		font-size: 30px;
+		font-size: 18px;
 	}
 	.map{
 		height: 300px; 
