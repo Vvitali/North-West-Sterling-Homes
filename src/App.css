@@ -4,27 +4,44 @@ body{
 }
 .flex-grid {
 	display: flex;
-	flex-direction: row;
-	
+	flex-direction: row;	
 	justify-content: center;	
 	align-items: center;
 }
 .col {
 	flex: 1;
 }
+.column {
+	float: left;
+	width: 33.33%;
+	text-align: left;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 .info, .map{
-	height: 700px;
 	padding: 0px;
 	text-align: justify;
 }
-.info{
+
+.row{
 	width: 100%;
 	margin: 0px;
 }
 .info p, h2{
 	margin: 5px 10px 5px 10px;
 }
+p{
+	font-size:20px;
+}
+h4{
+	font-size: 30px;
+}
+
 .inline{
 	display: inline-block;
 }
