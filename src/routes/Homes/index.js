@@ -5,23 +5,45 @@ import Lightbox from 'react-image-lightbox';
 import "./projects.css";
 
 const homeImages = [
-'/projects/1.jpg',
-'/projects/2.jpg',
-'/projects/3.jpg',
-'/projects/4.jpg',
-'/projects/5.jpg',
-'/projects/6.jpg',
+'/assets/images/projects/1.jpg',
+'/assets/images/projects/2.jpg',
+'/assets/images/projects/3.jpg',
+'/assets/images/projects/4.jpg',
+'/assets/images/projects/5.jpg',
+'/assets/images/projects/6.jpg',
+'/assets/images/projects/7.jpg'
 ];
 const masonryImages = [
-'/masonry/1.jpg',
-'/masonry/2.jpg',
-'/masonry/3.jpg',
-'/masonry/4.jpg',
-'/masonry/5.jpg',
-'/masonry/6.jpg',
+'/assets/images/masonry/1.jpg',
+'/assets/images/masonry/2.jpg',
+'/assets/images/masonry/3.jpg',
+'/assets/images/masonry/4.jpg',
+'/assets/images/masonry/5.jpg',
+'/assets/images/masonry/6.jpg'
 ] 
+const bathroomImages = [
+'/assets/images/bathroom/1.jpg',
+'/assets/images/bathroom/2.jpg',
+'/assets/images/bathroom/3.jpg',
+'/assets/images/bathroom/4.jpg',
+'/assets/images/bathroom/5.jpg',
+'/assets/images/bathroom/6.jpg'
+]
 
-const images = masonryImages;
+const outdoorImages = [
+'/assets/images/outdoor/1.jpg',
+'/assets/images/outdoor/2.jpg',
+'/assets/images/outdoor/3.jpg',
+'/assets/images/outdoor/4.jpg'
+]
+
+const trimImages = [
+'/assets/images/trim/1.jpg',
+'/assets/images/trim/2.jpg',
+'/assets/images/trim/3.jpg'
+]
+
+let images = masonryImages;
 class Homes extends Component{
 	constructor(props) {
 		super(props);
@@ -45,10 +67,9 @@ class Homes extends Component{
 	render(){
 		return(
 			<div className="animated">
-			<div >
+			<div>
 			<LightboxExample className="gallery-container"></LightboxExample>
 			</div>
-
 			</div>)
 	}
 
@@ -73,15 +94,54 @@ class LightboxExample extends Component {
 			<div className="gallery-container"> 
 			
 			<div>
-			<img src="/projects/1.jpg" key="1" onClick={this.clickHandler}/> 
+			<img src="/assets/images/projects/1.jpg" key="1" onClick={
+				()=>{ 
+					images = homeImages;
+					this.clickHandler();
+				}
+			}/> 
 			<p>Homes</p>
 			</div>
 			<div>
-			<img src="/masonry/6.jpg" key="2" onClick={this.clickHandler}/> 
+			<img src="/assets/images/masonry/6.jpg" key="2" onClick={
+				()=>{ 
+					images = masonryImages;
+					this.clickHandler();
+				}
+			}/> 
 			<p>Masonry</p> 
 			</div>
-			
-
+			<div>
+			<img src="/assets/images/bathroom/1.jpg" key="3" onClick={
+				()=>{ 
+					images = bathroomImages;
+					this.clickHandler();
+				}
+			}/> 
+			<p>Kitchen & Bathroom remodeling</p> 
+			</div>
+			<div>
+			<img src="/assets/images/renovation.jpg" key="4" onClick={this.clickHandler}/> 
+			<p>Home renovations & remodeling</p> 
+			</div>
+			<div>
+			<img src="/assets/images/outdoor/1.jpg" key="4" onClick={
+				()=>{ 
+					images = outdoorImages;
+					this.clickHandler();
+				}
+			}/> 
+			<p>Sunroom and outdoor living</p> 
+			</div>
+			<div>
+			<img src="/assets/images/trim/1.jpg" key="4" onClick={
+				()=>{ 
+					images = trimImages;
+					this.clickHandler();
+				}
+			}/> 	
+			<p>Cabinetry, trim & Millwork</p> 
+			</div>
 
 			{isOpen && (
 				<Lightbox
