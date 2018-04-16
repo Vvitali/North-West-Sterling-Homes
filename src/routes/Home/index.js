@@ -42,12 +42,12 @@ class Home extends Component{
 			</div>
 			<div>
 			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./test/2.jpg">
-			<h2>Main screen</h2>
+			<h2 className="projectInfo">Remodeling!</h2>
 			</Parallax>
 			</div>
 			<div>
 			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./test/3.jpg">
-			<h2>Main screen</h2>
+			<h2 className="projectInfo">Renovations</h2>
 			</Parallax>
 			</div>
 			</Slider>
