@@ -3,7 +3,8 @@ import Parallax from "../../Components/Parallax";
 import {isMobile} from 'react-device-detect';
 import MapComponent from "../../Components/Map";
 import Slider from "../../Components/Slider";
-import "./styles.css"
+import "./styles.css";
+import {Link} from 'react-router-dom';
 
 class Home extends Component{
 	constructor(props) {
@@ -88,7 +89,7 @@ class Home extends Component{
 
 			</div>
 			</div>
-			<a className="btn" href="./homes">Examples!</a>
+			<Link className="btn" to="./homes">Examples!</Link>
 
 			</div>
 			<div className="row  ">
