@@ -89,7 +89,7 @@ class Home extends Component{
 
 			</div>
 			</div>
-			<Link className="btn" to="./homes">Examples!</Link>
+			<Link to="/homes" className="btn" >Examples!</Link>
 
 			</div>
 			<div className="row  ">
