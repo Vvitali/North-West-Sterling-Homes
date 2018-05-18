@@ -37,7 +37,7 @@ class Home extends Component{
 
 			<Slider height={ this.sliderHeight } width={this.state.width}>
 			<div>
-			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./assets/images/masonry.jpg">
+			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./assets/images/projects/8.jpg">
 			<h2 className="projectInfo">Masonry</h2>
 			</Parallax>
 			</div>
