@@ -42,12 +42,12 @@ class Home extends Component{
 			</Parallax>
 			</div>
 			<div>
-			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./test/2.jpg">
+			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./assets/images/projects/9.jpg">
 			<h2 className="projectInfo">Remodeling!</h2>
 			</Parallax>
 			</div>
 			<div>
-			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./test/3.jpg">
+			<Parallax height={ this.sliderHeight} width={this.state.width} linkTo="./assets/images/projects/10.jpg">
 			<h2 className="projectInfo">Renovations</h2>
 			</Parallax>
 			</div>
