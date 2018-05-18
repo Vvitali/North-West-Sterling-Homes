@@ -11,7 +11,11 @@ const homeImages = [
 '/assets/images/projects/4.jpg',
 '/assets/images/projects/5.jpg',
 '/assets/images/projects/6.jpg',
-'/assets/images/projects/7.jpg'
+'/assets/images/projects/7.jpg',
+'/assets/images/projects/8.jpg',
+'/assets/images/projects/9.jpg',
+'/assets/images/projects/10.jpg',
+'/assets/images/projects/11.jpg'
 ];
 const masonryImages = [
 '/assets/images/masonry/1.jpg',
