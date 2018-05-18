@@ -33,7 +33,7 @@ class App extends Component{
 					paddingTop: "62px"
 				}
 			}>
-			<Router >
+			<Router>
 			<div>
 			<Header/>
 			<Switch>
