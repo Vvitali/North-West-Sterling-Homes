@@ -44,7 +44,7 @@ class App extends Component{
 			<Route exact path="/" component={ this.Home}/>			
 			<Route path="/msnry" component={ this.Masonry }/>
 			<Route path="/homes" component={  this.Homes}/>
-			<Route path="/portfolio" component={  this.AboutUs}/>
+			<Route path="/aboutus" component={  this.AboutUs}/>
 			</Switch>
 			</div>
 			</Router>

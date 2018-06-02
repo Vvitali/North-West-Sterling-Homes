@@ -27,5 +27,5 @@ const SliderComponent = (props)=>{
 		
 		</Slider>
 		)
-	}
-	export default SliderComponent;
+}
+export default SliderComponent;

@@ -33,9 +33,9 @@ const Header = ()=>{
 		<li className="dropdown">
 		
 		</li>
-		<li><Link to="./portfolio"><h2>ABOUT US</h2></Link></li>
+		<li><Link to="./aboutus"><h2>ABOUT US</h2></Link></li>
 
-		<li><Link to="./portfolio"><h2>CONTACTS</h2></Link></li>
+		<li><Link to="./#contacts"><h2>CONTACTS</h2></Link></li>
 		</ul>
 		</div> 
 		</div> 
