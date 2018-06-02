@@ -15,7 +15,7 @@ const Header = ()=>{
 		<span className="icon-bar"></span>
 		<span className="icon-bar"></span>
 		</button>
-		<a className="navbar-brand" href="./"><h2><b>NV STERLING HOMES</b></h2></a>
+		<a className="navbar-brand" href="./"><h2><b>NW STERLING HOMES</b></h2></a>
 
 		</div>
 		{isMobile? 
@@ -35,7 +35,7 @@ const Header = ()=>{
 		</li>
 		<li><Link to="./portfolio"><h2>ABOUT US</h2></Link></li>
 
-		<li><Link to="/#contacts"><h2>CONTACTS</h2></Link></li>
+		<li><Link to="./portfolio"><h2>CONTACTS</h2></Link></li>
 		</ul>
 		</div> 
 		</div> 

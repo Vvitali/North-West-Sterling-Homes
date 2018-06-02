@@ -6,11 +6,11 @@ const SliderComponent = (props)=>{
 	var settings = {
 		dots: false,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		arrows: false
 	};
 	return (
@@ -27,5 +27,5 @@ const SliderComponent = (props)=>{
 		
 		</Slider>
 		)
-}
-export default SliderComponent;
+	}
+	export default SliderComponent;
